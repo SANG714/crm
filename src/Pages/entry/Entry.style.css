@@ -1,0 +1,23 @@
+.entry-page{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-body{
+    background-color: white;
+    /* height: auto;
+    width: auto; */
+    padding:50px 35px;
+    font-size: large ;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and ( min-width: 750px){
+    .form-body{
+        padding: 100px 50px;
+        font-size: x-large;
+    }
+}
