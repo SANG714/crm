@@ -10,6 +10,7 @@ import Entry from './Pages/entry/Entry.page';
 import Dashboard from './Pages/Dashboard/Dashboard.page';
 import AddTicket from './Pages/New-ticket/AddTicket.page';
 import TicketLists from "./Pages/Ticket-list/TicketLists.page";
+import Ticket from "./Pages/Ticket/Ticket.page";
 
 function App() {
   return (
@@ -19,11 +20,15 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Entry />}>
         </Route>
-          <Route path="/dashboard" element={<Dashboard/>}></Route>
-          <Route path="/add-ticket" element={<AddTicket/>}></Route>
+          <Route path="/dashboard" element={<Dashboard/>}>
+        </Route>
+          <Route path="/add-ticket" element={<AddTicket/>}>
+        </Route>
            <Route path="/tickets"
-          element={<TicketLists/>}></Route> 
-          {/* <Route path="/ticket/:tid" element={}></Route>  */}
+          element={<TicketLists/>}>
+        </Route> 
+          <Route path="/ticket/:tid" element={<Ticket/>}>
+        </Route> 
       </Routes>
       </Router>
       

@@ -23,7 +23,7 @@ const TicketLists= () => {
     const searchTicket= sttr =>{
         const displayTickets = tickets.filter(row => row.subject.toLowerCase().includes(sttr.toLowerCase())
     );
-    console.log(displayTickets)
+    // console.log(displayTickets)
         setDispTicket(displayTickets)
     }
   return (
