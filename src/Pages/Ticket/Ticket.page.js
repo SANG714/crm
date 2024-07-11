@@ -5,6 +5,7 @@ import './Ticket.style.css'
 import tickets from '../../Assets/Data/Dummy-tickets.json'
 import MessageHistory from '../../components/Message-history/MessageHistory.comp'
 import UpdateTicket from '../../components/Update-ticket/UpdateTicket.comp'
+import DefaultLayout from '../../Layout/DefaultLayout'
 
 
 const ticket= tickets[0];
@@ -20,6 +21,7 @@ const Ticket = () => {
         alert("Form submitted!");
     };
   return (
+    <DefaultLayout>
     <Container>
       <Row>
         <Col>
@@ -50,6 +52,7 @@ const Ticket = () => {
       </Row>
 
     </Container>
+    </DefaultLayout>
   )
 }
 
